@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>T - AIA - 901</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="assets/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="assets/css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+  <nav class="white" role="navigation">
+    <div class="nav-wrapper container">
+      <a id="logo-container" href="#" class="brand-logo">T AIA 901</a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="#">ACCUEIL</a></li>
+      </ul>
+
+      <ul id="nav-mobile" class="sidenav">
+        <li><a href="#">Navbar Link</a></li>
+      </ul>
+      <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+    </div>
+  </nav>
+
+  <div id="index-banner" class="parallax-container">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <br><br>
+        <h1 class="header center text-lighten-0">Voyagez Simplement</h1>
+        <div class="row center">
+          <h5 class="header col s12 text-lighten-0">Un outil moderne et simple d'utilisation !</h5>
+        </div>
+        <br><br>
+
+      </div>
+    </div>
+    <div class="parallax"><img src="background-1.jpg" alt="Unsplashed background img 1"></div>
+  </div>
+
+  <div class="section py-6">
+      <div class="container">
+        <div class="row px-6">
+          <div class="col s6">
+            <div class="row">
+                <h2>1'</h2>
+                <p>Commencez par enregistrer votre voix en donnant un point de départ et un point d'arrivé</p>
+                <div class="divider"></div>
+                <div id="controls">
+                <a class="waves-effect waves-light btn" id="recordButton"><i class="material-icons left">mic</i>Record</a>
+                <a class="waves-effect waves-light btn" id="stopButton" disabled><i class="material-icons left">mic_off</i>Stop</a>
+                </div>
+                <p><strong>Enregistrements:</strong></p>
+                <ol id="recordingsList"></ol>
+            </div>
+          </div>
+          <div class="col s6">
+            <div class="row">
+              <h2>2'</h2>
+              <p>Une fois le champ rempli automatiquement, confirmer votre destination en appuyant sur le bouton valider</p>
+              <div class="divider"></div>
+              <form class="col s12">
+                <div class="row">
+                  <div class="input-field col s8">
+                    <i class="material-icons prefix">map</i>
+                    <textarea id="icon_prefix2" class="materialize-textarea"></textarea>
+                    <label for="icon_prefix2">Je veux aller ...</label>
+                  </div>
+                  <div class="input-field col s4">
+                    <button class="btn waves-effect waves-light" type="submit" name="action">SAVE
+                      <i class="material-icons right">send</i>
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col s6">
+            <h3>3'</h3>
+            <p>Le meilleur itinéraire s'affiche sur une carte google avec un point de départ et un point de destination !</p>
+            <div class="divider"></div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d83334.62895887953!2d3.985068287484201!3d49.25351938097624!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e974334a533b09%3A0x40a5fb99a3b45c0!2s51100%20Reims!5e0!3m2!1sfr!2sfr!4v1641489632183!5m2!1sfr!2sfr" width="500" height="350" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+      </div>
+  </div>
+
+  <footer class="page-footer teal">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">T-AIA-901</h5>
+          <p class="grey-text text-lighten-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dapibus ut erat sed suscipit.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dapibus ut erat sed suscipit. maximus, in egestas libero fermentum.</p>
+
+
+        </div>
+        <div class="col l3 s12">
+          <h5 class="white-text">Liens</h5>
+          <ul>
+            <li><a class="white-text" href="#!">Link 1</a></li>
+            <li><a class="white-text" href="#!">Link 2</a></li>
+            <li><a class="white-text" href="#!">Link 3</a></li>
+            <li><a class="white-text" href="#!">Link 4</a></li>
+          </ul>
+        </div>
+        <div class="col l3 s12">
+          <h5 class="white-text">Liens</h5>
+          <ul>
+            <li><a class="white-text" href="#!">Link 1</a></li>
+            <li><a class="white-text" href="#!">Link 2</a></li>
+            <li><a class="white-text" href="#!">Link 3</a></li>
+            <li><a class="white-text" href="#!">Link 4</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+      Made by <a class="brown-text text-lighten-3">T-AIA-901</a>
+      </div>
+    </div>
+  </footer>
+
+
+  <!--  Scripts-->
+  <script src="https://cdn.rawgit.com/mattdiamond/Recorderjs/08e7abd9/dist/recorder.js"></script>
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="assets/js/materialize.js"></script>
+  <script src="assets/js/app.js"></script>
+  </body>
+</html>
